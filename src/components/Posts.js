@@ -16,7 +16,7 @@ class Posts extends Component{
 
   componentDidUpdate(){
     if(!(Object.keys(this.props.newPost).length === 0 && this.props.newPost.constructor === Object)){
-      this.props.setPosts(this.props.posts);
+      this.props.setPosts(this.props.posts);    //connect returns 'setPosts()' as a prop
     }
   }
 
